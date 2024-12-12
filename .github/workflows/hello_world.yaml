@@ -1,0 +1,25 @@
+name: myfirst github actions
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Hello_world
+        run: echo "Hello world"
+        shell: bash
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: good_bye
+        run: echo "Good bye world"
+        shell: bash
+
+  
+
