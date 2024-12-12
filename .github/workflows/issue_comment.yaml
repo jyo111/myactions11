@@ -1,5 +1,8 @@
 name: Create a comment on new issue
 on:
+  push:
+    branches:
+      - develop
   issues:
     types:
       - opened
