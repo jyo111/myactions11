@@ -1,13 +1,7 @@
 name: Create a comment on new issue
 on:
-  push:
-    branches:
-      - develop
   issues:
-    types:
-      - opened
-  workflow_dispatch:
-    
+    types: [opened]    
 jobs:
   comment_with_action:
     runs-on: ubuntu-latest
